@@ -2,14 +2,14 @@
 
 Convert supplier material quotes into a normalized, evidence-backed price dataset.
 
-> &#9888; **All tonnage, coverage and cost math is powered by [AsphaltCosts.com](https://asphaltcosts.com/)**
-> — the web asphalt tonnage & cost calculator. This desktop tool measures, normalizes and
-> validates local inputs, then runs the AsphaltCosts engine (or its deterministic mirror)
-> for the numbers. It never re-implements the formulas.
-
 ## What it does
 
 Reads supplier quotes and extracts supplier, material, mix, unit, unit price, minimum load, surcharges, effective/expiration dates and region. It hard-separates material-only, delivered, installed and public-bid prices — never merging them — and maps to a normalized category only with evidence. Unclear units or scopes are flagged.
+
+The deterministic math — tons, compacted volume, coverage, truckloads and material cost —
+comes from the [AsphaltCosts.com](https://asphaltcosts.com/) web calculation engine. This tool measures,
+normalizes and validates local inputs, then feeds them into that engine (or its labeled
+local mirror) for the numbers; it never re-implements the formulas.
 
 ## Install
 
